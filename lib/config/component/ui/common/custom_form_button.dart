@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CustomFormButton extends StatelessWidget {
   final String innerText;
@@ -13,14 +14,14 @@ class CustomFormButton extends StatelessWidget {
     return Container(
       width: size.width * 0.8,
       decoration: BoxDecoration(
-        color: const Color(0xff233743),
+        color: Colors.blue,
         borderRadius: BorderRadius.circular(26),
       ),
       child: TextButton(
         onPressed: onPressed,
         child: Text(
           innerText,
-          style: const TextStyle(color: Colors.white, fontSize: 20),
+          style: GoogleFonts.poppins(fontSize: 20, color: Colors.white),
         ),
       ),
     );

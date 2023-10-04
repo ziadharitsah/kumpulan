@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class PageHeading extends StatelessWidget {
   final String title;
@@ -11,8 +12,10 @@ class PageHeading extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 25),
       child: Text(
         title,
-        style: const TextStyle(
-            fontSize: 30, fontWeight: FontWeight.bold, fontFamily: 'NotoSerif'),
+        style: GoogleFonts.poppins(
+            color: Colors.blueAccent,
+            fontSize: 35,
+            fontWeight: FontWeight.bold),
       ),
     );
   }
